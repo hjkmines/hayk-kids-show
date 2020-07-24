@@ -7,6 +7,10 @@
     </style>
   </head>
 
+<% @kid.errors.full_messages.each do |message| %> 
+  <p> <%= message %> </p> 
+<% end %>
+
   <body>
     <%= yield %>
   </body>
